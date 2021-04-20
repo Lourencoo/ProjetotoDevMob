@@ -1,0 +1,81 @@
+<ion-content class="ion-padding">
+    <img src="../../assets/imgs/LogoWD.png">
+    <br><br>
+
+  <div  class="ion-text-center">
+    <h2><ion-text color="tertiary">Histórico de Cursos</ion-text></h2>
+  </div> 
+
+
+
+ <ion-card >
+<ion-card-header>
+  <img src="../../assets/imgs/Fundamentos-de-TI.jpg"> 
+  <ion-text color="tertiary" class="ion-text-center"><h2>Fundamentos de TI</h2></ion-text>
+  </ion-card-header>
+<ion-card-content>
+  <ion-text class="ion-padding" color="tertiary">Situação: Aprovado<ion-icon color="success" name="checkmark-circle"></ion-icon></ion-text>
+  <hr>
+  <ion-text class="ion-padding" color="tertiary">Progresso:</ion-text> <ion-progress-bar value="1.0" color="success"></ion-progress-bar>
+   <hr>
+  <ion-text class="ion-padding" color="tertiary">Aproveitamento:</ion-text>
+  <ion-progress-bar value="0.78" color="success"></ion-progress-bar>
+</ion-card-content> 
+
+</ion-card> 
+
+<ion-card >
+  <ion-card-header>
+    <img src="../../assets/imgs/CursoHtml.jpg"> 
+    <ion-text color="tertiary" class="ion-text-center"><h2>HTML - Básico</h2></ion-text>
+    </ion-card-header>
+  <ion-card-content>
+    <ion-text class="ion-padding" color="tertiary">Situação: Em andamento<ion-icon name="hourglass" color="warning"></ion-icon></ion-text>
+    <hr>
+    <ion-text class="ion-padding" color="tertiary">Progresso:</ion-text> <ion-progress-bar value="0.5" color="warning"></ion-progress-bar>
+     <hr>
+    <ion-text class="ion-padding" color="tertiary">Aproveitamento:</ion-text>
+    <ion-progress-bar value="0.5" color="medium"></ion-progress-bar>
+  </ion-card-content> 
+  
+  </ion-card> 
+
+  <ion-card >
+    <ion-card-header>
+      <img src="../../assets/imgs/CursoPPT.jpg"> 
+      <ion-text color="tertiary" class="ion-text-center"><h2>Power Point Básico</h2></ion-text>
+      </ion-card-header>
+    <ion-card-content>
+      <ion-text class="ion-padding" color="tertiary">Situação: Reprovado<ion-icon color="danger"  name="close-circle"></ion-icon></ion-text>
+      <hr>
+      <ion-text class="ion-padding" color="tertiary">Progresso:</ion-text> <ion-progress-bar color="success" value="1,0"></ion-progress-bar>
+       <hr>
+      <ion-text class="ion-padding" color="tertiary">Aproveitamento:</ion-text>
+      <ion-progress-bar value="0.4" color="danger"></ion-progress-bar>
+    </ion-card-content> 
+    
+    </ion-card> 
+
+
+
+
+        <div class="ion-text-center">
+
+          <ion-button tab="people" routerLink='/cursos'>
+            <ion-icon name="caret-forward-outline" ></ion-icon>
+        <ion-label color='tertiary'>Cursos Disponíveis</ion-label>
+        </ion-button>
+
+
+        <ion-button tab="about" routerLink='/conteudo'>
+          <ion-icon name="add-circle-outline" ></ion-icon>
+      <ion-label color='tertiary'>Meus Cursos</ion-label>
+      </ion-button>
+
+
+          <ion-button routerLink='/home'>
+            SAIR
+            <ion-icon slot="end" name="log-out" routerLink='/home'></ion-icon>
+          </ion-button>
+        </div>
+      </ion-content>

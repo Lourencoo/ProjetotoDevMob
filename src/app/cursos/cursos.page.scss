@@ -1,0 +1,52 @@
+.logo{
+    position:center;
+    width: 315px;
+    height: 50px;
+}
+
+.divzinha {  
+    text-align:center;
+    position:center;
+
+    border-radius: 25px;
+    width: 318px;
+    height: 30px;
+}
+.teste{
+    --background: linear-gradient(#444242, black);
+
+}
+.botao{
+    float:right;
+    --background: url("https://cdn.discordapp.com/attachments/484858495221366790/833144868591108106/gradiente.png") no-repeat center center / cover !important;
+}
+.cursos{
+ position: center;
+    width: 300px;
+    height: 200px;
+}
+
+ion-card {
+    background-color: rgb(92, 87, 87); // black
+  }
+
+
+ion-item{
+    --border-radius: 20px!important;
+  }
+
+  ion-content {
+    --background: url('../../assets/imgs/fundoapp.png') no-repeat center center / cover !important;
+}
+
+ion-tab-bar, ion-tab-button{
+    background-color: #9b2183;
+   }
+   
+   ion-icon{
+     color: #ffffff;
+        font-size: 25px; //Preferred size here
+    }
+
+    
+   

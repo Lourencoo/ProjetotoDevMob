@@ -1,0 +1,23 @@
+ion-content {
+    --background: url('../../assets/imgs/fundoapp.png') no-repeat center center / cover !important;
+}
+
+
+ ion-card {
+    background-color: rgb(92, 87, 87); 
+    border-radius: 20px!important;
+  }
+
+ion-item{
+    --border-radius: 20px!important;
+  }
+
+  ion-tab-bar, ion-tab-button{
+    background-color: #9b2183;
+   }
+   
+   ion-icon{
+     color: #ffffff;
+   }
+
+  
