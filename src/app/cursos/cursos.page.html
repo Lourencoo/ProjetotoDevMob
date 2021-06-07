@@ -1,123 +1,175 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center"> WeDevolution</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
 
 <ion-content class="ion-padding">
-      <img src="../../assets/imgs/LogoWD.png">
-      <br><br>
-
-    <div class="ion-text-center">
-      <h2><ion-text color="tertiary">Cursos Disponiveis</ion-text></h2> 
-    </div> 
  
-  <ion-card>
-  <ion-card-header>
-    <img src="../../assets/imgs/Fundamentos-de-TI.jpg"> 
-    </ion-card-header>
-  <ion-card-content><ion-text color='tertiary' class="ion-text-center"><h1>Fundamentos de TI</h1><br></ion-text>
-    <ion-text color='tertiary'>Venha apender um pouco mais sobre TI, desde o Hardware e Softwares.</ion-text> 
-</ion-card-content> 
-<ion-button class="botao"><ion-icon name="add-circle-outline">
-</ion-icon> inscreva-se</ion-button>
-  </ion-card>
+  <div class="ion-text-center">
+    <h1>
+      <ion-text color="tertiary">Cursos Disponiveis</ion-text>
+    </h1>
+  </div>
+  <hr>
+
 
   <ion-card>
     <ion-card-header>
-      <img src="../../assets/imgs/CursoHtml.jpg"> 
-      </ion-card-header>
-    <ion-card-content><ion-text color='tertiary' class="ion-text-center"><h1>HTML - Básico</h1><br></ion-text>
-      <ion-text color='tertiary'>Curso de HTML básico para despertar sua criatividade sobre como os sites são feitos.</ion-text> 
-  </ion-card-content> 
-  <ion-button class="botao"><ion-icon name="add-circle-outline">
-  </ion-icon> inscreva-se</ion-button>
-    </ion-card>
+      <img src="../../assets/imgs/Fundamentos-de-TI.jpg">
+    </ion-card-header>
 
 
 
-    <ion-card>
-        <ion-card-header>
-          <img src="../../assets/imgs/CursoRedes.jpg"> 
-          </ion-card-header>
-        <ion-card-content><ion-text color='tertiary' class="ion-text-center"><h1>Introdução a redes De computadores</h1><br></ion-text>
-          <ion-text color='tertiary'>  Descubra como são feitas as redes de computadores e como funciona essa ligação. </ion-text> 
-      </ion-card-content> 
-      <ion-button class="botao"><ion-icon name="add-circle-outline">
-      </ion-icon> inscreva-se</ion-button>
-        </ion-card>
-
-        
-    <ion-card>
-      <ion-card-header>
-        <img src="../../assets/imgs/CursoJava.jpg"> 
-        </ion-card-header>
-      <ion-card-content><ion-text color='tertiary' class="ion-text-center"><h1>Curso de Java - Básico</h1><br></ion-text>
-        <ion-text color='tertiary'>Java é uma linguagem muito usada, venha já aprender como utilizar essa famosa linguagem.</ion-text> 
-    </ion-card-content> 
-    <ion-button class="botao"><ion-icon name="add-circle-outline">
-    </ion-icon> inscreva-se</ion-button>
-      </ion-card>
-
-      
-    <ion-card>
-      <ion-card-header>
-        <img src="../../assets/imgs/Curso Excel.jpg"> 
-        </ion-card-header>
-      <ion-card-content><ion-text color='tertiary' class="ion-text-center"><h1>EXCEL - Básico</h1><br></ion-text>
-        <ion-text color='tertiary'> Excel é uma ferramenta simples e bastante utilizada, descobra como utilizar a ferramenta já.</ion-text> 
-    </ion-card-content> 
-    <ion-button class="botao"><ion-icon name="add-circle-outline">
-    </ion-icon> inscreva-se</ion-button>
-      </ion-card>
-
-      
-    <ion-card>
-      <ion-card-header>
-        <img src="../../assets/imgs/CursoWord.jpg"> 
-        </ion-card-header>
-      <ion-card-content><ion-text color='tertiary' class="ion-text-center"><h1>Word - Básico</h1><br></ion-text>
-        <ion-text color='tertiary'>O Word é a ferramenta mais conhecida do office, descubra como é feita a edição de textos.</ion-text> 
-    </ion-card-content> 
-    <ion-button class="botao"><ion-icon name="add-circle-outline">
-    </ion-icon> inscreva-se</ion-button>
-      </ion-card>
-
-      
-    <ion-card>
-      <ion-card-header>
-        <img src="../../assets/imgs/CursoPPT.jpg"> 
-        </ion-card-header>
-      <ion-card-content><ion-text color='tertiary' class="ion-text-center"><h1>PowerPoint - Básico</h1><br></ion-text>
-        <ion-text color='tertiary'>O PowerPoint é um aplicativo muito utilizado para desenvolver apresentações, com diversos recursos como: objetos gráficos (cliparts), símbolos, organogramas, fotos, entre outros recursos gráficos.</ion-text> 
-    </ion-card-content> 
-    <ion-button class="botao"><ion-icon name="add-circle-outline">
-    </ion-icon> inscreva-se</ion-button>
-      </ion-card>
-  
-        <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
-          <ion-infinite-scroll-content
-            loadingSpinner="bubbles"
-            loadingText="Loading more data...">
-          </ion-infinite-scroll-content>
-        </ion-infinite-scroll>
-  
-
-          <div class="ion-text-center">
-       
+    <ion-card-content>
+      <ion-text color='tertiary' class="ion-text-center">
+        <h1>Fundamentos de TI</h1><br>
+      </ion-text>
+      <ion-text color='tertiary'>Venha apender um pouco mais sobre TI, desde o Hardware e Softwares.</ion-text>
+      <hr>
+      <section class="full-width" >
+        <ion-button expand="full">
+          <ion-icon name="add-circle-outline"> </ion-icon>
+          inscreva-se
+        </ion-button>
+      </section>
+    </ion-card-content>
+  </ion-card>
 
 
-        <ion-button tab="about" routerLink='/progress'>
-          <ion-icon name="checkmark-circle-outline"  ></ion-icon>
-      <ion-label color='tertiary'>Histórico de Cursos</ion-label>
-      </ion-button>
 
-      <ion-button tab="about" routerLink='/conteudo'>
-        <ion-icon name="add-circle-outline" ></ion-icon>
-    <ion-label color='tertiary'>Meus Cursos</ion-label>
-    </ion-button>
 
-      
-    <ion-button routerLink='/home'>
-      SAIR
-      <ion-icon slot="end" name="log-out"></ion-icon>
-    </ion-button>
-          
-        </div>
-        </ion-content>
-  
+
+  <ion-card>
+    <ion-card-header>
+      <img src="../../assets/imgs/CursoHtml.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color='tertiary' class="ion-text-center">
+        <h1>HTML - Básico</h1><br>
+      </ion-text>
+      <ion-text color='tertiary'>Curso de HTML básico para despertar sua criatividade sobre como os sites são feitos.
+      </ion-text>
+      <hr>
+      <section class="full-width">
+        <ion-button expand="full">
+          <ion-icon name="add-circle-outline"> </ion-icon>
+          inscreva-se
+        </ion-button>
+      </section>
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <ion-card>
+    <ion-card-header>
+      <img src="../../assets/imgs/CursoRedes.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color='tertiary' class="ion-text-center">
+        <h1>Introdução a redes De computadores</h1><br>
+      </ion-text>
+      <ion-text color='tertiary'> Descubra como são feitas as redes de computadores e como funciona essa ligação.
+      </ion-text>
+      <hr>
+      <section class="full-width">
+        <ion-button expand="full">
+          <ion-icon name="add-circle-outline"> </ion-icon>
+          inscreva-se
+        </ion-button>
+      </section>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <img src="../../assets/imgs/CursoJava.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color='tertiary' class="ion-text-center">
+        <h1>Curso de Java - Básico</h1><br>
+      </ion-text>
+      <ion-text color='tertiary'>Java é uma linguagem muito usada, venha já aprender como utilizar essa famosa
+        linguagem.</ion-text>
+      <hr>
+      <section class="full-width">
+        <ion-button expand="full">
+          <ion-icon name="add-circle-outline"> </ion-icon>
+          inscreva-se
+        </ion-button>
+      </section>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <img src="../../assets/imgs/Curso Excel.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color='tertiary' class="ion-text-center">
+        <h1>EXCEL - Básico</h1><br>
+      </ion-text>
+      <ion-text color='tertiary'> Excel é uma ferramenta simples e bastante utilizada, descobra como utilizar a
+        ferramenta já.</ion-text>
+      <hr>
+      <section class="full-width">
+        <ion-button expand="full">
+          <ion-icon name="add-circle-outline"> </ion-icon>
+          inscreva-se
+        </ion-button>
+      </section>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <img src="../../assets/imgs/CursoWord.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color='tertiary' class="ion-text-center">
+        <h1>Word - Básico</h1><br>
+      </ion-text>
+      <ion-text color='tertiary'>O Word é a ferramenta mais conhecida do office, descubra como é feita a edição de
+        textos.</ion-text>
+      <hr>
+      <section class="full-width">
+        <ion-button expand="full">
+          <ion-icon name="add-circle-outline"> </ion-icon>
+          inscreva-se
+        </ion-button>
+      </section>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <img src="../../assets/imgs/CursoPPT.jpg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color='tertiary' class="ion-text-center">
+        <h1>PowerPoint - Básico</h1><br>
+      </ion-text>
+      <ion-text color='tertiary'>O PowerPoint é um aplicativo muito utilizado para desenvolver apresentações, com
+        diversos recursos como: objetos gráficos (cliparts), símbolos, organogramas, fotos, entre outros recursos
+        gráficos.</ion-text>
+      <hr>
+      <section class="full-width">
+        <ion-button expand="full">
+          <ion-icon name="add-circle-outline"> </ion-icon>
+          inscreva-se
+        </ion-button>
+      </section>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

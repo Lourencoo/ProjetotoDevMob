@@ -1,0 +1,22 @@
+ion-menu {
+    --ion-text-color: rgb(255, 255, 255);
+    --ion-background:url('../assets/imgs/Backgroundgrey.png') ;
+
+    ion-toolbar {
+        --background: url('../assets/imgs/Backgroundgrey.png');
+    }
+
+    ion-list {
+        --background: url('../assets/imgs/Backgroundgrey.png');
+    }
+    ion-item {
+        color: rgb(255, 255, 255);
+        --background: url('../assets/imgs/Backgroundgrey.png');
+    }
+    ion-content {
+        --background: url('../assets/imgs/Backgroundgrey.png');
+    }
+    ion-icon{
+        color: rgb(255, 255, 255);
+    }
+}

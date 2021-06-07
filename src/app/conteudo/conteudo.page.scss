@@ -45,3 +45,8 @@ ion-tab-bar, ion-tab-button{
    ion-icon{
      color: #ffffff;
    }
+
+   ion-toolbar{
+       color: #ffffff;
+       --background: url('../../assets/imgs/fundoapp.png') no-repeat center center / cover !important;
+   }

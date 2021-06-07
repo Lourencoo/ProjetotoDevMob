@@ -1,3 +1,38 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title class="ion-text-center">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="checkmark-circle-sharp" slot="start" routerLink='/cursos'></ion-icon>
+          <ion-label routerLink='/cursos'>Cursos Disponíveis</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="book" slot="start" routerLink='/conteudo'></ion-icon>
+          <ion-label routerLink='/conteudo'>Meus Cursos</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="school" slot="start" routerLink='/progress'></ion-icon>
+          <ion-label routerLink='/progress'>Histórico de Cursos</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="notifications" slot="start" routerLink='/lembretes'></ion-icon>
+          <ion-label routerLink='/lembretes'>Lembretes</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="star" slot="start" routerLink='/'></ion-icon>
+          <ion-label routerLink='/'>Avaliações do App</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="log-out" slot="start" routerLink='/home'></ion-icon>
+          <ion-label routerLink='/home'>Sair</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

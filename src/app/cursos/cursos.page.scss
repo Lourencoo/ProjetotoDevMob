@@ -28,8 +28,9 @@
 
 ion-card {
     background-color: rgb(92, 87, 87); // black
+    border-radius: 20px!important;
   }
-
+  
 
 ion-item{
     --border-radius: 20px!important;
@@ -39,14 +40,12 @@ ion-item{
     --background: url('../../assets/imgs/fundoapp.png') no-repeat center center / cover !important;
 }
 
-ion-tab-bar, ion-tab-button{
-    background-color: #9b2183;
-   }
-   
    ion-icon{
      color: #ffffff;
         font-size: 25px; //Preferred size here
     }
 
-    
-   
+    ion-toolbar{
+        color: #ffffff;
+        --background: url('../../assets/imgs/fundoapp.png') no-repeat center center / cover !important;
+    }

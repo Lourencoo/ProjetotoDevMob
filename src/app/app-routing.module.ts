@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'trocarsenha',
     loadChildren: () => import('./trocarsenha/trocarsenha.module').then( m => m.TrocarsenhaPageModule)
   },
+  {
+    path: 'lembretes',
+    loadChildren: () => import('./lembretes/lembretes.module').then( m => m.LembretesPageModule)
+  },
 
 ];
 
