@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter,Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-contact-form',
@@ -7,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactFormComponent implements OnInit {
 
+  @Input() contact;
+  @Output() contactSaved = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {}
+
+  public onClick(){
+    this.contactSaved.emit();
+
+  }
 
 }

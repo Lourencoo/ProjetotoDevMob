@@ -2,3 +2,16 @@ ion-toolbar{
     color: #ffffff;
     --background: url('../../assets/imgs/fundoapp.png') no-repeat center center / cover !important;
 }
+ion-content {
+    --background: url('../../assets/imgs/Backgroundgrey.png') no-repeat center center / cover !important;
+  }
+ 
+ion-item {
+    color: rgb(255, 255, 255);
+    --background: url('../../assets/imgs/Backgroundgrey.png');
+ }
+
+ .card-center{
+    width:90%; // adjust width on your ion-card suitable on your screen
+    display:block;
+}

@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreatePage implements OnInit {
 
+  public emptyContact = {
+    tituloLembrete:'',
+    lembrete:''
+  };
+
   constructor() { }
 
   ngOnInit() {
+  }
+  createContact(){
+    console.log(this.emptyContact);
   }
 
 }

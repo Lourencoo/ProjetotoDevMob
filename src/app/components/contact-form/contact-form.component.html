@@ -1,3 +1,12 @@
-<p>
-  contact-form works!
-</p>
+<ion-item class="ion-text-center">
+  <ion-label position="floating"> Nome do Lembrete</ion-label>
+  <ion-input [(ngModel)]="contact.tituloLembrete" type="text"></ion-input>
+</ion-item>
+<ion-item class="ion-text-center">
+  <ion-label position="floating">Lembrete</ion-label>
+  <ion-input  [(ngModel)]="contact.Lembrete" type="text"></ion-input>
+</ion-item>
+<ion-button (click)="onClick()" expand="block">
+  <ion-icon slot="start" name="save"></ion-icon>
+  Salvar
+</ion-button>
