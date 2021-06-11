@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { LembretesPageRoutingModule } from './lembretes-routing.module';
 
 import { LembretesPage } from './lembretes.page';
+import { ContactDetailsModalComponent } from '../components/contact-details-modal/contact-details-modal.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { LembretesPage } from './lembretes.page';
     IonicModule,
     LembretesPageRoutingModule
   ],
-  declarations: [LembretesPage]
+  declarations: [LembretesPage, ContactDetailsModalComponent]
 })
 export class LembretesPageModule {}

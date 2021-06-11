@@ -31,6 +31,14 @@ const routes: Routes = [
     path: 'lembretes',
     loadChildren: () => import('./lembretes/lembretes.module').then( m => m.LembretesPageModule)
   },
+  {
+    path: 'edit',
+    loadChildren: () => import('./edit/edit.module').then( m => m.EditPageModule)
+  },
+  {
+    path: 'create',
+    loadChildren: () => import('./create/create.module').then( m => m.CreatePageModule)
+  },
 
 ];
 

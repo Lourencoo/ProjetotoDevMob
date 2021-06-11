@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; 
+import { MenuController } from "@ionic/angular";
 import { HomePage } from './home/home.page';
 import { ProgressPage } from './progress/progress.page';
 
@@ -8,5 +9,11 @@ import { ProgressPage } from './progress/progress.page';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private menu: MenuController) {}
+
+  public openEnd() {  
+    this.menu.close();
+   
+    }
+ 
 }

@@ -7,29 +7,29 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item>
-          <ion-icon name="checkmark-circle-sharp" slot="start" routerLink='/cursos'></ion-icon>
-          <ion-label routerLink='/cursos'>Cursos Disponíveis</ion-label>
+        <ion-item  routerLink='/cursos' (click)="openEnd()">
+          <ion-icon name="checkmark-circle-sharp" slot="start"></ion-icon>
+          <ion-label>Cursos Disponíveis</ion-label>
         </ion-item>
-        <ion-item>
-          <ion-icon name="book" slot="start" routerLink='/conteudo'></ion-icon>
-          <ion-label routerLink='/conteudo'>Meus Cursos</ion-label>
+        <ion-item routerLink='/conteudo'  (click)="openEnd()">
+          <ion-icon name="book" slot="start" ></ion-icon>
+          <ion-label>Meus Cursos</ion-label>
         </ion-item>
-        <ion-item>
-          <ion-icon name="school" slot="start" routerLink='/progress'></ion-icon>
-          <ion-label routerLink='/progress'>Histórico de Cursos</ion-label>
+        <ion-item routerLink='/progress'  (click)="openEnd()">
+          <ion-icon name="school" slot="start"></ion-icon>
+          <ion-label >Histórico de Cursos</ion-label>
         </ion-item>
-        <ion-item>
-          <ion-icon name="notifications" slot="start" routerLink='/lembretes'></ion-icon>
-          <ion-label routerLink='/lembretes'>Lembretes</ion-label>
+        <ion-item routerLink='/lembretes'  (click)="openEnd()">
+          <ion-icon name="notifications" slot="start"></ion-icon>
+          <ion-label >Lembretes</ion-label>
         </ion-item>
-        <ion-item>
-          <ion-icon name="star" slot="start" routerLink='/'></ion-icon>
-          <ion-label routerLink='/'>Avaliações do App</ion-label>
+        <ion-item slot="start" routerLink='/'  (click)="openEnd()">
+          <ion-icon name="star" slot="start"></ion-icon>
+          <ion-label >Avaliações do App</ion-label>
         </ion-item>
-        <ion-item>
-          <ion-icon name="log-out" slot="start" routerLink='/home'></ion-icon>
-          <ion-label routerLink='/home'>Sair</ion-label>
+        <ion-item routerLink='/home'  (click)="openEnd()">
+          <ion-icon name="log-out" slot="start"></ion-icon>
+          <ion-label >Sair</ion-label>
         </ion-item>
       </ion-list>
     </ion-content>
