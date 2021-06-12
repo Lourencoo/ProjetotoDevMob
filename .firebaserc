@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "projetodevmob": {
+      "hosting": {
+        "app": [
+          "projetodevmob"
+        ]
+      }
+    }
+  }
+}

@@ -1,21 +1,19 @@
 
 <ion-content padding class="alignin-center">
-  <ion-grid>
-    <ion-row>
-    <img src="../../assets/imgs/LogoWD.png">
-    </ion-row>
-    <ion-row> 
   <div *ngIf="user == null" class="ion-padding">
+    <ion-card>
+      <ion-card-content>
+        <img src="../../assets/imgs/LogoWD.png">
   <h1 class='ion-padding'>Seja Bem- Vindo ao WeDevolution </h1> 
+  
    <h4 class='ion-padding'>Faça Login com seu E-mail e Senha.</h4>
     <ion-item class="ion-padding"  >
-      <ion-label floating>
+      <ion-label floating >
       <ion-icon  color="primary" name='person'>
       </ion-icon></ion-label>
-      <ion-input type="int" placeholder="Digite seu e-mail." required></ion-input>
+      <ion-input  type="int" placeholder="Digite seu e-mail." required></ion-input>
     </ion-item>
-    
-    <br>
+
 
     <ion-item class="ion-padding" style="border: 10px;" >
       <ion-label floating>
@@ -23,13 +21,17 @@
       </ion-icon> </ion-label>
       <ion-input type="password" placeholder="Digite sua senha."required></ion-input>
     </ion-item>
-
-    <ion-button class="ion-padding" routerLink='/trocarsenha'>Esqueci minha senha.</ion-button>
-    <ion-button routerLink='/cursos' class="ion-padding" >Login</ion-button>
+ 
+    <ion-button (click)="login()" expand="block">
+      <ion-icon slot="start" name ="logo-google"> </ion-icon>
+      Logar com Google
+    </ion-button>
   
-  </div>
-  
-</ion-row>
-  <ion-grid>
+        <ion-button routerLink='/trocarsenha' expand="block" (click)="logout()">Esqueci minha senha.</ion-button>
+        <ion-button class="ion-padding" expand="block" >Logar</ion-button>
+      <hr>
+  </ion-card-content>
+</ion-card>
+ 
 
 

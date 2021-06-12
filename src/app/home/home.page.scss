@@ -3,6 +3,16 @@ ion-content {
 }
 
 ion-item{
-  --border-radius: 20px!important;
+  --border-radius: 25px!important;
+}
+
+ion-card {
+  color:white;
+  background: url('../home/img/Backgroundgrey.png');
+  border-radius: 20px!important;
+}
+ion-button {
+  --border-radius: 40px!important;
+
 }
 
