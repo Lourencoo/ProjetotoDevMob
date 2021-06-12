@@ -1,39 +1,31 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { NavController } from '@ionic/angular';
+import { ContactService } from '../services/contact.service';
 
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.page.html',
   styleUrls: ['./edit.page.scss'],
 })
-export class EditPage implements OnInit {
-  private contacts = [
-    {
-      tituloLembrete: 'Lembrete 1',
-      lembrete : 'Fazer curso de Html, e finalizar a atividade 2'
-    },
-    {
-      tituloLembrete: 'Lembrete 2',
-      lembrete: 'HAHAHAHAHA'
-    },
-    {
-      tituloLembrete: 'Lembrete 3',
-      lembrete: 'Não Tem'
-    },
-  ];
+export class EditPage  {
 
   public contact;
+  private originaltituloLembrete;
 
-  constructor(route: ActivatedRoute) { 
-    const tituloLembrete = route.snapshot.paramMap.get('tituloLembrete');
-    this.contact = this.contacts.find(c => c.tituloLembrete === tituloLembrete);
+  constructor(route: ActivatedRoute, 
+    private contactService: ContactService,
+    private navCtrl: NavController
+    
+    ) { 
+    this.originaltituloLembrete = route.snapshot.paramMap.get('tituloLembrete');
+    this.contact = contactService.findByLembrete(this.originaltituloLembrete);
   }
 
-  ngOnInit() {
-  }
 
   public saveChanges(){
-    console.log(this.contact);
+   this.contactService.updateByLembrete(this.originaltituloLembrete, this.contact);
+   this.navCtrl.back();
   }
 
 }
